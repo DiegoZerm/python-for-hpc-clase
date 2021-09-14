@@ -12,9 +12,6 @@ Welcome to the MPCDF **Python for HPC** tutorial!
 
 ## Course material
 
-A tarball containing the course material is available for
-[download](https://mpcdf.pages.mpcdf.de/python-for-hpc/pyhpc.tar.gz).
-
 The Jupyter notebooks discussed during the lectures are bundled into a
 [Jupyter book](https://mpcdf.pages.mpcdf.de/python-for-hpc) for convenient reading.
 
