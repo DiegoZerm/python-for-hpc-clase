@@ -1,0 +1,12 @@
+# directories
+__pycache__
+.unison
+.ipynb_checkpoints
+mpcdf-internal
+
+# files
+*.so
+*.o
+*.lprof
+*.tmp
+

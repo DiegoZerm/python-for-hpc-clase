@@ -1,0 +1,17 @@
+# Packages required to build a Docker image for Binder
+name: pyhpc-env
+channels:
+  - conda-forge
+dependencies:
+  - python
+  - pip
+  - numpy
+  - scipy
+  - h5py
+  - cython
+  - numba
+  - matplotlib
+  - seaborn
+  - line_profiler
+  - gcc_linux-64
+  - gxx_linux-64
