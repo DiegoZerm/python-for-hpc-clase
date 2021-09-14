@@ -1,5 +1,5 @@
 # Packages required to build a Docker image for Binder
-name: pyhpc-env
+name: pyhpc
 channels:
   - conda-forge
 dependencies:
