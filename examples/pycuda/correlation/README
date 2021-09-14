@@ -1,0 +1,18 @@
+Timings on a Tesla K20 (Kepler) for 1000 elements:
+gpu took  0.24s
+cython took  0.030  s
+python v1 took  5.94  s
+python v2 took  8.28  s
+
+Timings on a Tesla K20 (Kepler), MPI on 10 cores (Ivy bridge) for 20000 elements:
+gpu took  0.25  s
+cython took  23.18  s
+mpi took  2.41  s
+
+Timings on a Tesla K20 (Kepler), MPI on 20 cores (1 Ivy bridge node) for 40000 elements:
+gpu took  0.30  s
+mpi took  4.85  s
+
+Timings on a Tesla K20 (Kepler), MPI on 20 cores (1 Ivy bridge node) for 100000 elements:
+gpu took  0.8  s
+mpi took  29.77  s

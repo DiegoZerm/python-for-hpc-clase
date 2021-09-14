@@ -2,7 +2,6 @@
 __pycache__
 .unison
 .ipynb_checkpoints
-mpcdf-internal
 
 # files
 *.so
