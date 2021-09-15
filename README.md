@@ -12,9 +12,7 @@ Welcome to the MPCDF **Python for HPC** tutorial!
 
 ## Course material
 
-The Jupyter notebooks discussed during the lectures are bundled into a
-[Jupyter book](https://mpcdf.pages.mpcdf.de/python-for-hpc) for convenient reading.
-
+* The Jupyter notebooks discussed during the lectures are bundled into a [Jupyter book](https://mpcdf.pages.mpcdf.de/python-for-hpc) for convenient reading.
 * This material is currently intended to be used only by the registered participants of a Python for HPC course given by the MPCDF
 * Redistribution requires the consent of the authors
 
@@ -62,13 +60,12 @@ Other minor sources are referenced in the notebooks.
 
 ## Software prerequisites
 
-### Installation of the Anaconda Python Distribution
+### Python packages
 
 The examples discussed in this course are based on Python 3 and NumPy, SciPy,
-Cython, Numba, etc.
-To conveniently get access to all those packages, you can download and install
-Anaconda Python 3 into your home directory by using the script
-`aux/install_anaconda.sh`
+Cython, Numba, matplotlib, and few more.
+To conveniently get access to all those packages, you can e.g. download and install
+Anaconda Python or similar distributions.
 
 ### Jupyter presentation via RISE
 
