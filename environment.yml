@@ -12,9 +12,9 @@ dependencies:
   - numba
   - matplotlib
   - line_profiler
-  #- gcc_linux-64
-  #- gxx_linux-64
-  #- gfortran_linux-64
+  - gcc_linux-64
+  - gxx_linux-64
+  - gfortran_linux-64
   - mpich
   - mpi4py
   - hdf5=*=mpi*
