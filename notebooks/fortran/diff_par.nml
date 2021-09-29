@@ -1,0 +1,6 @@
+&diff
+  n_iterations = 2000
+  np = 768
+  dt = 0.15
+  D = 1.25
+/

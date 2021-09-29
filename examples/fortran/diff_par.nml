@@ -1,6 +1,0 @@
-&diff
-  n_iterations = 1000
-  np = 1024
-  dt = 0.12
-  D = 1.2
-/
