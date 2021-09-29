@@ -19,6 +19,6 @@ dependencies:
   - mpi4py
   - hdf5=*=mpi*
   - h5py=*=mpi*
-  - pip
+  - pip:
     - line-profiler
     - pybind11
