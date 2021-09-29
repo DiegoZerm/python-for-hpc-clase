@@ -1,16 +1,18 @@
+# Packages required for "Python for HPC"
 name: pyhpc
 channels:
-  - defaults
-  #- conda-forge
+  - conda-forge
 dependencies:
   - python=3.7
-  #- libblas=*=*mkl
-  - mkl
+  - pip
+  - libopenblas=*=*openmp*
   - numpy
   - scipy
   - cython
-  - matplotlib
+  - pybind11
   - pandas
+  - matplotlib
+  - line_profiler
   - gcc_linux-64
   - gxx_linux-64
   - gfortran_linux-64
@@ -19,6 +21,3 @@ dependencies:
   - mpi4py
   - hdf5=*=mpi*
   - h5py=*=mpi*
-  - pip:
-    - line-profiler
-    - pybind11
