@@ -1,6 +1,6 @@
 import os
 import numpy as np
-from setuptools import setup, Extension, Command
+from setuptools import setup, Extension
 
 
 # assuming gcc, set (aggressive) optimization flags, to be appended to the default compile line
@@ -25,27 +25,7 @@ ext = Extension("ctonumpy.cube",
                 extra_link_args=ld_flags,
                 include_dirs=[np.get_include()])
 
-class CleanCommand(Command):
-    """Enable `python setup.py clean` to tidy up properly."""
-    user_options = []
-
-    def initialize_options(self):
-        pass
-
-    def finalize_options(self):
-        pass
-
-    def run(self):
-        # better: use plain Python instead of UNIX commands
-        os.system('rm -vrf build')
-        os.system('rm -vrf dist')
-        os.system('rm -vrf ctonumpy/cube.c')
-        os.system('rm -vrf ctonumpy/__pycache__')
-        os.system('rm -vrf ctonumpy.egg-info')
-        os.system("find ctonumpy -name '*.so' -delete -print")
-        os.system("find ctonumpy -name '*.pyc' -delete -print")
-
 setup(name="ctonumpy",
       ext_modules=[ext],
-      cmdclass={'clean': CleanCommand})
+)
 
