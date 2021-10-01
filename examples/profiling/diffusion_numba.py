@@ -4,7 +4,7 @@
 
 
 import numpy as np
-from numba import jit
+from numba import jit, njit
 
 # parameters (global, for convenience)
 n_iterations = 10
@@ -33,11 +33,11 @@ def init(val=0.5):
     return grid
 
 
-@jit(nopython=True)
 def main_loop(evolve_func, grid):
     """Main loop function, calling evolve_func on grid."""
     grid_tmp = np.empty_like(grid)
     for i in range(1, n_iterations+1):
+        apply_periodic_bc_python(grid, n_points)
         evolve_func(grid, grid_tmp, n_points, dt, D)
         # swap references, do not copy
         if grid_tmp is not None:
@@ -47,7 +47,7 @@ def main_loop(evolve_func, grid):
     return grid
 
 
-@jit(nopython=True)
+@njit()
 def apply_periodic_bc_python(grid, n_points):
     """Explicitly apply periodic boundary conditions, via Python loops."""
     for j in range(n_points + 2):
@@ -58,9 +58,8 @@ def apply_periodic_bc_python(grid, n_points):
         grid[ i, 0] = grid[ i,-2]
 
 
-@jit(nopython=True)
+@njit
 def evolve_python(grid, grid_tmp, n_points, dt, D):
-    apply_periodic_bc_python(grid, n_points)
     for i in range(1, n_points+1):
         for j in range(1, n_points+1):
             # stencil formula
