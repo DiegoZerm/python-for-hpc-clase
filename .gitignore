@@ -1,11 +1,11 @@
 # directories
-__pycache__
+#__pycache__
 .unison
 .ipynb_checkpoints
 
 # files
-*.so
-*.o
+#*.so
+#*.o
 *.lprof
 *.tmp
 

@@ -2,7 +2,7 @@
 
 ## Features
 
-* Python module "ctonumpy" lives in the directory "ctonumpy" (has `__init__.py`)
+* Python module "ctonumpy.cube" lives in the directory "ctonumpy" (has `__init__.py`)
 * `c_cube.c` contains a OMP parallel loop-based computation of the third power of an array
 * `cube.pyx` contains the Python interface written in Cython
 * `setup.py` contains code to compile the extension with optimizing compiler flags

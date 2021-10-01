@@ -16,14 +16,15 @@ c_flags.append("-fopt-info")
 include_dirs = []
 include_dirs.append(np.get_include())
 
-# extra link flags are possible as well; we leave them empty here
-ld_flags = []
+# extra link flags are possible as well; here we use the same as for compilation to link to libgomp
+ld_flags = c_flags
 
 ext = Extension("ctonumpy.cube",
                 sources=["ctonumpy/cube.pyx", "ctonumpy/c_cube.c"],
                 extra_compile_args=c_flags,
                 extra_link_args=ld_flags,
-                include_dirs=[np.get_include()])
+                include_dirs=[np.get_include()]
+)
 
 setup(name="ctonumpy",
       ext_modules=[ext],

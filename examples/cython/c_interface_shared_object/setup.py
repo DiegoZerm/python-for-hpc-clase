@@ -1,7 +1,6 @@
 import os
 from setuptools import setup, Extension
 
-
 libhello_dir = os.path.abspath("./libhello")
 
 # We need to specify the location of the include file.
@@ -19,7 +18,8 @@ ld_flags.append("-lhello")  # link libhello
 ext = Extension("wrap_libhello.hello",
                 sources=["wrap_libhello/hello.pyx"],
                 extra_link_args=ld_flags,
-                include_dirs=include_dirs)
+                include_dirs=include_dirs
+)
 
 setup(name="wrap_libhello",
       ext_modules=[ext],

@@ -6,10 +6,10 @@
 * `hello.pyx` contains the Python interface written in Cython
 * `c_hello.c` contains a hello-world implementation in C, however, in contrast
   to the previous simple example it is located in a different library (.so,
-  shared object) in the directory `libhello`.  Use `make` to generate the
-  shared object.
+  shared object) in the directory `libhello`.
+  Use `make` to generate the shared object in that directory.
 * `setup.py` contains code to compile the extension, demonstrating how to link
-  the shared object in a stable way
+  the shared object in a stable way.
 
 ## Usage
 
