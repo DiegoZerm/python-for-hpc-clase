@@ -1,0 +1,7 @@
+[build-system]
+requires = ["setuptools", "pybind11[global]"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pybex"
+version = "0.0.1"

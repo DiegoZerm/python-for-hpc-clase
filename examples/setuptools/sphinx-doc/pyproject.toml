@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "HelloWorld"
+version = "0.1"
+description = "This is an example package"
+authors = [
+  {name = "John Doe", email = "john.doe@example.mpg.de"}
+]
+license = {text = "PSF"}
+keywords = ["hello", "world", "example"]
+
+[project.optional-dependencies]
+doc = ["sphinx"]
+
+[project.urls]
+homepage = "https://example.mpg.de/HelloWorld/"

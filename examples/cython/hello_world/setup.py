@@ -1,5 +1,6 @@
 from setuptools import setup
 from Cython.Build import cythonize
 
-setup(name = "hello_world",
-      ext_modules = cythonize("hello_world.pyx"))
+setup(
+    ext_modules = cythonize("hello_world/hello_world.pyx")
+)

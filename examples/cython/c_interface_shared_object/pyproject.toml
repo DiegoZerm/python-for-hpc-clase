@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools", "cython"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "wrap_libhello"
+version = "0.1"
+
+[tool.setuptools.packages.find]
+exclude = ["libhello"]
+
+[tool.setuptools.package-data]
+wrap_libhello = ["*.h"]

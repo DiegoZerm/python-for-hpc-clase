@@ -1,5 +1,4 @@
 Run
 
-python setup.py pytest
-
-to do the tests via setup.py.
+pip install .[tests]
+pytest -v tests/

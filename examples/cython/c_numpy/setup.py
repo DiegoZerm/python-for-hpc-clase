@@ -26,7 +26,7 @@ ext = Extension("ctonumpy.cube",
                 include_dirs=[np.get_include()]
 )
 
-setup(name="ctonumpy",
-      ext_modules=[ext],
+setup(
+    ext_modules=[ext],
 )
 

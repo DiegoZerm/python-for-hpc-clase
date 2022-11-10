@@ -10,8 +10,8 @@
 
 ## Usage
 
-* quick test in the current directory  
-  `python setup.py build_ext --inplace`  
+* quick test in the current directory
+  `pip install -e .`
   `./test_ctonumpy.py`
 * or install the package, and run the extension from anywhere
 

@@ -1,7 +1,12 @@
 import os
 from setuptools import setup, Extension
 
-libhello_dir = os.path.abspath("./libhello")
+try:
+    libhello_root = os.environ["HELLO_ROOT"]
+except KeyError as e:
+    raise ValueError("Set path to libhello in environment variable HELLO_ROOT")
+
+libhello_dir = os.path.abspath(libhello_root)
 
 # We need to specify the location of the include file.
 include_dirs = []
@@ -21,6 +26,6 @@ ext = Extension("wrap_libhello.hello",
                 include_dirs=include_dirs
 )
 
-setup(name="wrap_libhello",
-      ext_modules=[ext],
+setup(
+    ext_modules=[ext],
 )

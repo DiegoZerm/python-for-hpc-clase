@@ -2,7 +2,7 @@
 
 ## Features
 
-* Python module "wrap_libhello" lives in the directory "wrap_libhello" (has `__index__.py`)
+* Python module "hello" lives in the package-directory "wrap_libhello" (has `__init__.py`)
 * `hello.pyx` contains the Python interface written in Cython
 * `c_hello.c` contains a hello-world implementation in C, however, in contrast
   to the previous simple example it is located in a different library (.so,
@@ -13,9 +13,10 @@
 
 ## Usage
 
+* set enviroment variable HELLO_ROOT to point to libhello, e.g., from
+  the current directory `export HELLO_ROOT=$(pwd)/libhello/`
 * quick test in the current directory
-  `python setup.py build_ext --inplace`
-  `python -c "from wrap_libhello import hello; hello.say_hello()"`
+  `pip install -e --user .`
+  run `test_wrap_libhello.py` to call the function in the shared object
 * or install the package, and run the extension from anywhere
-  `python setup.py install --user`
-* run `test_wrap_libhello.py` to call the function in the shared object
+  `python install . --user`

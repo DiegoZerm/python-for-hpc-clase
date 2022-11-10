@@ -2,7 +2,7 @@
 
 Run the following commands to build and run the example:
 1.  python setup.py config
-2.  python setup.py build_ext --inplace
+2.  pip install -e .
 3.  python -c "import hello_world; hello_world.say_hello()"
 
 Explanation:

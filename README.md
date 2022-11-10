@@ -4,9 +4,10 @@ Welcome to the MPCDF **Python for HPC** tutorial!
 
 ## Authors
 
-* © 2018 - 2021 Sebastian Ohlmann (sebastian.ohlmann@mpcdf.mpg.de)
-* © 2018 - 2021 Klaus Reuter (klaus.reuter@mpcdf.mpg.de)
+* © 2022 Sebastian Kehl (sebastian.kehl@mpcdf.mpg.de)
 * © 2020 Rafael Lago (rafael.lago@mpcdf.mpg.de)
+* © 2018 - 2022 Sebastian Ohlmann (sebastian.ohlmann@mpcdf.mpg.de)
+* © 2018 - 2022 Klaus Reuter (klaus.reuter@mpcdf.mpg.de)
 
 [Max Planck Computing and Data Facility, Garching](https://mpcdf.mpg.de/)
 
@@ -35,6 +36,7 @@ Welcome to the MPCDF **Python for HPC** tutorial!
   * multiprocessing
   * mpi4py
   * Running parallel Python programs with SLURM
+  * Parallelization frameworks, e.g. Dask and Ray
 * Software engineering with Python
   * Testing
   * Packaging

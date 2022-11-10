@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "helloworld"
+version = "0.1"
+# name of the software package (as it would appear on PyPI)
+description = "example package that prints hello world"
+# dependencies = ["numpy"]
+authors = [
+  {name = "John Doe", email = "john.doe@example.mpg.de"}
+]
+license = {text = "PSF"}
+keywords = ["hello", "world", "example"]
+
+[project.urls]
+homepage = "https://example.mpg.de/helloworld/"
+
+# list of executable(s) that come with the package (if applicable)
+[project.scripts]
+hello-world = "helloworld.cli:hello_world"
+

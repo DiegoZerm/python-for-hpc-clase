@@ -9,10 +9,10 @@ To generate the documentation,
 
 install the package first to make it importable
 
-   python setup.py develop --user
+   pip install .[doc]
 
 and run
 
-   python setup.py build_sphinx
+   sphinx-build -b html doc/ doc/_build
 
 to generate the HTML documentation.

@@ -10,9 +10,9 @@
 ## Usage
 
 * quick test in the current directory
-  `python setup.py build_ext --inplace`
+  `pip install -e .`
   `python -c "from foobar import hello; hello.say_hello()"`
+  or run `test_foobar.py`
 * or install the package, and run the extension from anywhere
-  `python setup.py install --user`
-* run `test_foobar.py` to call the compiled code example
+  `pip install --user`
 
