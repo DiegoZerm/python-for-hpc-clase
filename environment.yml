@@ -18,6 +18,9 @@ dependencies:
   - gfortran_linux-64
   - numba
   - jax
+  - dask
+  - graphviz
+  - python-graphviz
   - mpich
   - mpi4py
   - hdf5=*=mpi*
