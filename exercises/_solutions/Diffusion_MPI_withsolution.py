@@ -183,7 +183,7 @@ if rank == 0:
 # set this to true if you have an h5py version supporting parallel hdf5
 write_output_parallel = False
 
-if write_output_parallel = True
+if write_output_parallel:
     # Output data in parallel with hdf5
     f = h5py.File('parallel.hdf5', 'w', driver='mpio', comm=MPI.COMM_WORLD)
     # create dataset of global size
