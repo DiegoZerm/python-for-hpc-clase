@@ -1,13 +1,13 @@
 # Python for HPC
 
-Welcome to the MPCDF **Python for HPC** tutorial!
+Welcome to the MPCDF **Python for HPC** course!
 
 ## Authors
 
-* © 2022 Sebastian Kehl (sebastian.kehl@mpcdf.mpg.de)
-* © 2020 Rafael Lago (rafael.lago@mpcdf.mpg.de)
-* © 2018 - 2022 Sebastian Ohlmann (sebastian.ohlmann@mpcdf.mpg.de)
-* © 2018 - 2022 Klaus Reuter (klaus.reuter@mpcdf.mpg.de)
+* 2022 - 2023 Sebastian Kehl (sebastian.kehl@mpcdf.mpg.de)
+* 2020        Rafael Lago
+* 2018 - 2023 Sebastian Ohlmann (sebastian.ohlmann@mpcdf.mpg.de)
+* 2018 - 2023 Klaus Reuter (klaus.reuter@mpcdf.mpg.de)
 
 [Max Planck Computing and Data Facility, Garching](https://mpcdf.mpg.de/)
 
@@ -16,6 +16,7 @@ Welcome to the MPCDF **Python for HPC** tutorial!
 * The Jupyter notebooks discussed during the lectures are bundled into a [Jupyter book](https://mpcdf.pages.mpcdf.de/python-for-hpc) for convenient reading.
 * This material is currently intended to be used only by the registered participants of a Python for HPC course given by the MPCDF
 * Redistribution requires the consent of the authors
+* A GIT repository of the material is provided at https://gitlab.mpcdf.mpg.de/mpcdf/python-for-hpc-exercises
 
 ## List of topics
 
@@ -28,15 +29,15 @@ Welcome to the MPCDF **Python for HPC** tutorial!
   * HDF5-based IO with h5py
   * Cython
   * Interfacing with C/C++, Fortran, CUDA, and libraries
-  * Numba
+  * JIT, Numba, jax
   * Profiling
 * Parallel computing
   * Parallel computing basics
   * Python threading, GIL
   * multiprocessing
+  * Parallelization frameworks, e.g. Dask
   * mpi4py
-  * Running parallel Python programs with SLURM
-  * Parallelization frameworks, e.g. Dask and Ray
+  * Running parallel Python programs with Slurm
 * Software engineering with Python
   * Testing
   * Packaging
@@ -77,3 +78,4 @@ Anaconda Python or similar distributions.
     * `jupyter-nbextension install rise --py --sys-prefix`
     * `jupyter-nbextension enable rise --py --sys-prefix`
   * To enter presentation mode, simply press <Alt+r> from within a notebook.
+
