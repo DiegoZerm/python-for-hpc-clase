@@ -1,10 +1,10 @@
 # basic parameters
 n_darts = 2**20
-n_tasks = 32
+n_tasks = 64
 # visualization unfortunately fails on Raven due to missing fonts on the compute nodes
 visualize_graph = False
 # set to True when running via dask_mpi, otherwise a LocalCluster() is used
-use_mpi = False
+use_mpi = True
 
 
 import os, sys
@@ -53,4 +53,10 @@ pi = pi.compute()
 t1 = time.perf_counter()
 
 print(f"pi \\approx {pi} ({t1-t0}s)")
+
+# Send explicit close signal to all workers (conceptually similar to MPI_Finalize),
+# avoids blocking of the job until the time limit on the present installation on Raven,
+# creates some noise in the output/stderr stream.
+# (Should not be necessary according to the docs, recheck.)
+dm.send_close_signal()
 

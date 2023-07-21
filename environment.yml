@@ -3,7 +3,7 @@ name: pyhpc
 channels:
   - conda-forge
 dependencies:
-  - python=3.7
+  - python=3.10
   - pip
   - libopenblas=*=*openmp*
   - numpy
@@ -25,3 +25,5 @@ dependencies:
   - mpi4py
   - hdf5=*=mpi*
   - h5py=*=mpi*
+  # - jupyterlab
+  # - notebook

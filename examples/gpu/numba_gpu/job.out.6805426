@@ -1,0 +1,3 @@
+/mpcdf/soft/SLE_15/packages/x86_64/anaconda/3/2023.03/lib/python3.10/site-packages/numba/cuda/cudadrv/devicearray.py:885: NumbaPerformanceWarning: [1mHost array used in CUDA kernel will incur copy overhead to/from device.[0m
+  warn(NumbaPerformanceWarning(msg))
+OK!

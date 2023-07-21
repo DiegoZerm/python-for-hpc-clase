@@ -13,10 +13,10 @@ Welcome to the MPCDF **Python for HPC** course!
 
 ## Course material
 
-* The Jupyter notebooks discussed during the lectures are bundled into a [Jupyter book](https://mpcdf.pages.mpcdf.de/python-for-hpc) for convenient reading.
 * This material is currently intended to be used only by the registered participants of a Python for HPC course given by the MPCDF
 * Redistribution requires the consent of the authors
 * A GIT repository of the material is provided at https://gitlab.mpcdf.mpg.de/mpcdf/python-for-hpc-exercises
+* The Jupyter notebooks discussed during the lectures are bundled into a [Jupyter book](https://mpcdf.pages.mpcdf.de/python-for-hpc) for convenient reading.
 
 ## List of topics
 
@@ -57,7 +57,7 @@ This course is largely based on our experience from daily work. In addition, the
 
 * *High Performance Python, Practical Performant Programming for Humans*, Micha Gorelick, Ian Ozsvald, O'Reilly Media; 2014. (In particular, parts of the diffusion example are discussed similarly to the presentation in this book.)
 * *A Whirlwind Tour of Python*, Jake VanderPlas, O'Reilly Media, 2016. 
-* official documentation of Python, NumPy, SciPy, Cython, Numba, mpi4py
+* official documentation of Python, NumPy, SciPy, Cython, Numba, mpi4py, etc.
 
 Other minor sources are referenced in the notebooks.
 
@@ -68,7 +68,7 @@ Other minor sources are referenced in the notebooks.
 The examples discussed in this course are based on Python 3 and NumPy, SciPy,
 Cython, Numba, matplotlib, and few more.
 To conveniently get access to all those packages, you can e.g. download and install
-Anaconda Python or similar distributions.
+Anaconda Python or a similar distribution.
 
 ### Jupyter presentation via RISE
 
