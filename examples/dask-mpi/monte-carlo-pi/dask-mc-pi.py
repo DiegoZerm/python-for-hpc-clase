@@ -54,9 +54,10 @@ t1 = time.perf_counter()
 
 print(f"pi \\approx {pi} ({t1-t0}s)")
 
+
 # Send explicit close signal to all workers (conceptually similar to MPI_Finalize),
 # avoids blocking of the job until the time limit on the present installation on Raven,
 # creates some noise in the output/stderr stream.
 # (Should not be necessary according to the docs, recheck.)
-dm.send_close_signal()
-
+if use_mpi:
+    dm.send_close_signal()

@@ -12,7 +12,7 @@ Algorithm:
  -- approximation for pi is obtained by dividing equations (1) and (2)
     4 * A_circle/A_square = pi
  -- let's play darts: the probability of hitting the circle is proportional
-    to its area, while are guaranteed to hit the square always
+    to its area, while guaranteed to hit the square always
 """
 
 import os
@@ -60,4 +60,3 @@ def approximate_pi(n_samples):
 if __name__ == "__main__":
     my_pi = approximate_pi(2**25)
     print("PI deviation = %f" % ( np.abs(my_pi - np.pi)/np.pi ))
-

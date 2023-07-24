@@ -24,12 +24,10 @@ except AttributeError:
 
 
 def init(val=0.5):
-    """Set up a 2d NumPy array with some local square initial value pattern."""
-    grid = np.zeros([n_points+2, n_points+2])
-    # set a square patch near the corner to val > 0
-    block_lo = int(n_points * .01)
-    block_hi = int(n_points * .5)
-    grid[block_lo:block_hi, block_lo:block_hi] = val
+    """Set up a 2d NumPy array with some initial value pattern."""
+    x = np.linspace(0., 4.*np.pi, num=n_points+2)
+    y = np.linspace(0., 4.*np.pi, num=n_points+2)
+    grid = val * np.outer(np.sin(x)**4, np.sin(y)**4)
     return grid
 
 
@@ -71,4 +69,3 @@ def evolve_python(grid, grid_tmp, n_points, dt, D):
 
 grid = init()
 solution_python = main_loop(evolve_python, grid)
-
