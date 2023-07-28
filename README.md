@@ -15,7 +15,7 @@ Welcome to the MPCDF **Python for HPC** course!
 
 * This material is currently intended to be used only by the registered participants of a Python for HPC course given by the MPCDF
 * Redistribution requires the consent of the authors
-* A GIT repository of the material is provided at https://gitlab.mpcdf.mpg.de/mpcdf/python-for-hpc-exercises
+* A git repository of the material is provided at https://gitlab.mpcdf.mpg.de/mpcdf/python-for-hpc-exercises
 * The Jupyter notebooks discussed during the lectures are bundled into a [Jupyter book](https://mpcdf.pages.mpcdf.de/python-for-hpc) for convenient reading.
 
 ## List of topics
@@ -29,12 +29,13 @@ Welcome to the MPCDF **Python for HPC** course!
   * HDF5-based IO with h5py
   * Cython
   * Interfacing with C/C++, Fortran, CUDA, and libraries
-  * JIT, Numba, jax
+  * JIT, Numba, Jax
   * Profiling
 * Parallel computing
   * Parallel computing basics
   * Python threading, GIL
   * multiprocessing
+  * GPU computing using Numba, CuPy, Jax
   * Parallelization frameworks, e.g. Dask
   * mpi4py
   * Running parallel Python programs with Slurm
@@ -68,7 +69,8 @@ Other minor sources are referenced in the notebooks.
 The examples discussed in this course are based on Python 3 and NumPy, SciPy,
 Cython, Numba, matplotlib, and few more.
 To conveniently get access to all those packages, you can e.g. download and install
-Anaconda Python or a similar distribution.
+Anaconda Python or a similar distribution and add additional required packages
+using `pip` or `conda`. The 'environment.yml' file can be used for `conda`.
 
 ### Jupyter presentation via RISE
 
