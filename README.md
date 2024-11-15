@@ -4,10 +4,10 @@ Welcome to the MPCDF **Python for HPC** course!
 
 ## Authors
 
-* 2022 - 2023 Sebastian Kehl (sebastian.kehl@mpcdf.mpg.de)
+* 2022 - 2024 Sebastian Kehl (sebastian.kehl@mpcdf.mpg.de)
 * 2020        Rafael Lago
-* 2018 - 2023 Sebastian Ohlmann (sebastian.ohlmann@mpcdf.mpg.de)
-* 2018 - 2023 Klaus Reuter (klaus.reuter@mpcdf.mpg.de)
+* 2018 - 2024 Sebastian Ohlmann (sebastian.ohlmann@mpcdf.mpg.de)
+* 2018 - 2024 Klaus Reuter (klaus.reuter@mpcdf.mpg.de)
 
 [Max Planck Computing and Data Facility, Garching](https://mpcdf.mpg.de/)
 
@@ -56,21 +56,24 @@ Welcome to the MPCDF **Python for HPC** course!
 
 This course is largely based on our experience from daily work. In addition, the following sources were used:
 
-* *High Performance Python, Practical Performant Programming for Humans*, Micha Gorelick, Ian Ozsvald, O'Reilly Media; 2014. (In particular, parts of the diffusion example are discussed similarly to the presentation in this book.)
+* *High Performance Python, Practical Performant Programming for Humans*, Micha Gorelick, Ian Ozsvald, O'Reilly Media; Second Edition, 2020. (In particular, parts of the diffusion example are discussed similarly to the presentation in this book.)
 * *A Whirlwind Tour of Python*, Jake VanderPlas, O'Reilly Media, 2016. 
 * official documentation of Python, NumPy, SciPy, Cython, Numba, mpi4py, etc.
 
-Other minor sources are referenced in the notebooks.
+Other (minor) sources are referenced directly in the notebooks.
 
 ## Software prerequisites
 
 ### Python packages
 
 The examples discussed in this course are based on Python 3 and NumPy, SciPy,
-Cython, Numba, matplotlib, and few more.
-To conveniently get access to all those packages, you can e.g. download and install
-Anaconda Python or a similar distribution and add additional required packages
-using `pip` or `conda`. The 'environment.yml' file can be used for `conda`.
+Cython, Numba, matplotlib, mpi4py, Dask, and few more.
+
+To conveniently get access to all the required packages, users can download and install
+[Miniforge](https://conda-forge.org/miniforge/) -- which is a free alternative to
+commercial Python distributions -- and use `conda` or `mamba` together with the file
+`environment.yml` from this repository to create a local
+[software environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file).
 
 ### Jupyter presentation via RISE
 

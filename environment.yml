@@ -1,9 +1,10 @@
-# Packages required for "Python for HPC"
+# Packages required for running the examples from MPCDF's Python for HPC course:
 name: pyhpc
 channels:
   - conda-forge
+  - nodefaults
 dependencies:
-  - python=3.10
+  - python=3.12
   - pip
   - libopenblas=*=*openmp*
   - numpy
