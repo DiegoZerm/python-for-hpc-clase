@@ -28,4 +28,6 @@ dependencies:
   - h5py=*=mpi*
   - jupyterlab
   - notebook<7
-  - rise
+  - pip:
+    - RISE
+
