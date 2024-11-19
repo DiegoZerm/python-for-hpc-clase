@@ -78,9 +78,5 @@ commercial Python distributions -- and use `conda` or `mamba` together with the 
 ### Jupyter presentation via RISE
 
 * Presentation of the Jupyter notebook cells as slides is possible via the [RISE](http://rise.readthedocs.io/en/latest/index.html) extension.
-  * Installation
-    * `pip install RISE`
-    * `jupyter-nbextension install rise --py --sys-prefix`
-    * `jupyter-nbextension enable rise --py --sys-prefix`
   * To enter presentation mode, simply press <Alt+r> from within a notebook.
 

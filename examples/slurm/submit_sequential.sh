@@ -12,10 +12,10 @@
 #SBATCH --time=0:10:00     # run time, up to 24h
 
 module purge
-module load gcc/10 impi/2019.9
-module load anaconda/3/2021.05
+module load gcc/13 openmpi/4.1
+module load anaconda/3/2023.03
 
 # avoid overbooking of the cores which might occur via NumPy/MKL threading
 export OMP_NUM_THREADS=${SLURM_CPUS_PER_TASK:-1}
 
-srun python ./python_hello_world.py
+srun python3 ./python_hello_world.py
