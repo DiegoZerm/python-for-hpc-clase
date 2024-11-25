@@ -1,0 +1,7 @@
+[build-system]
+requires = ['meson-python', 'numpy']
+build-backend = 'mesonpy'
+
+[project]
+name = 'f2py_example'
+version = '1.0.0'

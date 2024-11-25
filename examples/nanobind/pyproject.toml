@@ -1,0 +1,12 @@
+[build-system]
+requires = ["nanobind", "scikit-build-core"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "pybex"
+version = "0.0.1"
+requires-python = ">= 3.8"
+dependencies = ["numpy"]
+
+[tool.scikit-build]
+cmake.version = ">=3.18"

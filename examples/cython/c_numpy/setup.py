@@ -20,7 +20,7 @@ include_dirs.append(np.get_include())
 ld_flags = c_flags
 
 ext = Extension("ctonumpy.cube",
-                sources=["ctonumpy/cube.pyx", "ctonumpy/c_cube.c"],
+                sources=["src/ctonumpy/cube.pyx", "src/ctonumpy/c_cube.c"],
                 extra_compile_args=c_flags,
                 extra_link_args=ld_flags,
                 include_dirs=[np.get_include()]

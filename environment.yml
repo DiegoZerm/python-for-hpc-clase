@@ -4,6 +4,10 @@ channels:
   - conda-forge
   - nodefaults
 dependencies:
+  # Note: nbclassic (notebook<7) and RISE require python<=3.11 for now.
+  # In case the RISE presentation mode is not necessary, newer Python
+  # versions can be used and the last three lines of the present file
+  # can be commented or removed.
   - python=3.11
   - pip
   - libopenblas=*=*openmp*
@@ -27,6 +31,7 @@ dependencies:
   - hdf5=*=mpi*
   - h5py=*=mpi*
   - jupyterlab
+  # Required for RISE presentation mode from nbclassic:
   - notebook<7
   - pip:
     - RISE

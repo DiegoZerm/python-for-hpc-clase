@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-import fib
+from f2py_example import fib
 
 print("# automatically generated docstring")
 print(fib.fib.__doc__)

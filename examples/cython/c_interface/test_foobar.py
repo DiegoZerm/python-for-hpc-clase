@@ -3,7 +3,6 @@
 try:
     from foobar import hello
 except:
-    print("Please compile first using `pip install -e .`")
+    print("Please compile first using `pip install .`")
 else:
     hello.say_hello()
-
