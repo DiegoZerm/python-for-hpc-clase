@@ -13,6 +13,7 @@ dependencies:
   - libopenblas=*=*openmp*
   - numpy
   - scipy
+  - pooch
   - cython
   - pybind11
   - pandas
