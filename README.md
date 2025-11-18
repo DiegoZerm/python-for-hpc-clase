@@ -4,10 +4,13 @@ Welcome to the MPCDF **Python for HPC** course!
 
 ## Authors
 
-* 2022 - 2024 Sebastian Kehl (sebastian.kehl@mpcdf.mpg.de)
+* 2022 - 2025 Sebastian Kehl (sebastian.kehl@mpcdf.mpg.de)
+* 2018 - 2025 Sebastian Ohlmann (sebastian.ohlmann@mpcdf.mpg.de)
+* 2018 - 2025 Klaus Reuter (klaus.reuter@mpcdf.mpg.de)
+
+### Former contributors
+
 * 2020        Rafael Lago
-* 2018 - 2024 Sebastian Ohlmann (sebastian.ohlmann@mpcdf.mpg.de)
-* 2018 - 2024 Klaus Reuter (klaus.reuter@mpcdf.mpg.de)
 
 [Max Planck Computing and Data Facility, Garching](https://mpcdf.mpg.de/)
 
@@ -57,7 +60,7 @@ Welcome to the MPCDF **Python for HPC** course!
 This course is largely based on our experience from daily work. In addition, the following sources were used:
 
 * *High Performance Python, Practical Performant Programming for Humans*, Micha Gorelick, Ian Ozsvald, O'Reilly Media; Second Edition, 2020. (In particular, parts of the diffusion example are discussed similarly to the presentation in this book.)
-* *A Whirlwind Tour of Python*, Jake VanderPlas, O'Reilly Media, 2016. 
+* *A Whirlwind Tour of Python*, Jake VanderPlas, O'Reilly Media, 2016.
 * official documentation of Python, NumPy, SciPy, Cython, Numba, mpi4py, etc.
 
 Other (minor) sources are referenced directly in the notebooks.
@@ -79,4 +82,3 @@ commercial Python distributions -- and use `conda` or `mamba` together with the 
 
 * Presentation of the Jupyter notebook cells as slides is possible via the [RISE](http://rise.readthedocs.io/en/latest/index.html) extension.
   * To enter presentation mode, simply press <Alt+r> from within a notebook.
-
