@@ -24,36 +24,35 @@ Welcome to the MPCDF **Python for HPC** course!
 ## List of topics
 
 * Introduction
-  * Python refresher
   * Basic HPC
 * Efficient numerical computing
   * NumPy
   * SciPy
-  * HDF5-based IO with h5py
-  * Cython
+  * HDF5-based IO with H5Py
   * Interfacing with C/C++, Fortran, CUDA, and libraries
-  * JIT, Numba, Jax
+  * JIT with Numba and Jax
   * Profiling
+* Software engineering with Python
+  * Testing
+  * Packaging
+  * Documentation
 * Parallel computing
   * Parallel computing basics
   * Python threading, GIL
   * multiprocessing
   * GPU computing using Numba, CuPy, Jax
-  * Parallelization frameworks, e.g. Dask
-  * mpi4py
+  * Parallelization frameworks, Dask
+  * MPI, mpi4py
   * Running parallel Python programs with Slurm
-* Software engineering with Python
-  * Testing
-  * Packaging
-  * Documentation
-* Visualization
-  * matplotlib
-  * Colors
-* Exercises and examples
+* Complementary exercises and examples
   * Basic Python
   * NumPy
   * simple advection code
   * simple diffusion code (MPI)
+* Backup material
+  * Python refresher
+  * Cython
+  * Visualization (matplotlib, Colors)
 
 ## References
 
@@ -78,7 +77,8 @@ commercial Python distributions -- and use `conda` or `mamba` together with the 
 `environment.yml` from this repository to create a local
 [software environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file).
 
-### Jupyter presentation via RISE
+### Jupyter slide presentation via RISE
 
-* Presentation of the Jupyter notebook cells as slides is possible via the [RISE](http://rise.readthedocs.io/en/latest/index.html) extension.
-  * To enter presentation mode, simply press <Alt+r> from within a notebook.
+Presentation of the Jupyter notebook cells as slides is possible via the [RISE](http://rise.readthedocs.io/en/latest/index.html) extension.
+To enter presentation mode, simply press <Alt+r> from within a notebook.
+
