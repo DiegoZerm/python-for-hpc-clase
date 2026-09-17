@@ -1,84 +1,91 @@
-# Python for HPC
+# Python para HPC
 
-Welcome to the MPCDF **Python for HPC** course!
+¡Bienvenido/a al curso **Python para HPC** (Computación de Alto Rendimiento)!
 
-## Authors
+Este material es una traducción y adaptación al español, para estudiantes de licenciatura, del curso *Python for HPC* del Max Planck Computing and Data Facility (MPCDF).
 
-* 2022 - 2025 Sebastian Kehl (sebastian.kehl@mpcdf.mpg.de)
-* 2018 - 2025 Sebastian Ohlmann (sebastian.ohlmann@mpcdf.mpg.de)
-* 2018 - 2025 Klaus Reuter (klaus.reuter@mpcdf.mpg.de)
+## Créditos
 
-### Former contributors
+Este curso está basado en el material original creado por:
 
-* 2020        Rafael Lago
+* Sebastian Kehl (2022 - 2025)
+* Sebastian Ohlmann (2018 - 2025)
+* Klaus Reuter (2018 - 2025)
 
-[Max Planck Computing and Data Facility, Garching](https://mpcdf.mpg.de/)
+[Max Planck Computing and Data Facility (MPCDF), Garching](https://mpcdf.mpg.de/)
 
-## Course material
+Con contribuciones previas de Rafael Lago (2020).
 
-* This material is currently intended to be used only by the registered participants of a Python for HPC course given by the MPCDF
-* Redistribution requires the consent of the authors
-* A git repository of the material is provided at https://gitlab.mpcdf.mpg.de/mpcdf/python-for-hpc-exercises
-* The Jupyter notebooks discussed during the lectures are bundled into a [Jupyter book](https://mpcdf.pages.mpcdf.de/python-for-hpc) for convenient reading.
+Repositorio original (en inglés): https://gitlab.mpcdf.mpg.de/mpcdf/python-for-hpc-exercises
 
-## List of topics
+**Adaptación al español y para licenciatura:** Javier Moya
 
-* Introduction
-  * Basic HPC
-* Efficient numerical computing
+## Sobre este material
+
+* El material original del MPCDF indica que está pensado para los participantes registrados de su curso, y que su redistribución requiere el consentimiento de los autores. Esta adaptación se comparte con fines educativos para un curso de licenciatura, dando el crédito correspondiente a los autores originales.
+* Los notebooks de Jupyter discutidos en las clases están siendo traducidos progresivamente y adaptados con explicaciones adicionales pensadas para quienes ven HPC por primera vez.
+
+## Temario
+
+* Introducción
+  * Bases de HPC
+* Cómputo numérico eficiente
   * NumPy
   * SciPy
-  * HDF5-based IO with H5Py
-  * Interfacing with C/C++, Fortran, CUDA, and libraries
-  * JIT with Numba and Jax
-  * Profiling
-* Software engineering with Python
+  * Entrada/salida basada en HDF5 con H5Py
+  * Interfaz con C/C++, Fortran, CUDA y otras librerías
+  * Compilación JIT con Numba y JAX
+  * Profiling (medición de rendimiento)
+* Ingeniería de software con Python
   * Testing
-  * Packaging
-  * Documentation
-* Parallel computing
-  * Parallel computing basics
-  * Python threading, GIL
-  * multiprocessing
-  * GPU computing using Numba, CuPy, Jax
-  * Parallelization frameworks, Dask
+  * Empaquetado
+  * Documentación
+* Cómputo paralelo
+  * Bases de cómputo paralelo
+  * Threading en Python, el GIL
+  * Multiprocessing
+  * Cómputo en GPU con Numba, CuPy, JAX
+  * Frameworks de paralelización, Dask
   * MPI, mpi4py
-  * Running parallel Python programs with Slurm
-* Complementary exercises and examples
-  * Basic Python
+  * Ejecutar programas paralelos en Python con Slurm
+* Ejercicios y ejemplos complementarios
+  * Repaso de Python
   * NumPy
-  * simple advection code
-  * simple diffusion code (MPI)
-* Backup material
-  * Python refresher
+  * Código simple de advección
+  * Código simple de difusión (MPI)
+* Material adicional
+  * Repaso de Python
   * Cython
-  * Visualization (matplotlib, Colors)
+  * Visualización (matplotlib, colores)
 
-## References
+## Referencias
 
-This course is largely based on our experience from daily work. In addition, the following sources were used:
+Este curso está basado en gran parte en la experiencia de trabajo diario de sus autores originales. Además, se usaron las siguientes fuentes:
 
-* *High Performance Python, Practical Performant Programming for Humans*, Micha Gorelick, Ian Ozsvald, O'Reilly Media; Second Edition, 2020. (In particular, parts of the diffusion example are discussed similarly to the presentation in this book.)
+* *High Performance Python, Practical Performant Programming for Humans*, Micha Gorelick, Ian Ozsvald, O'Reilly Media; segunda edición, 2020. (En particular, partes del ejemplo de difusión se presentan de forma similar a como se discute en este libro.)
 * *A Whirlwind Tour of Python*, Jake VanderPlas, O'Reilly Media, 2016.
-* official documentation of Python, NumPy, SciPy, Cython, Numba, mpi4py, etc.
+* Documentación oficial de Python, NumPy, SciPy, Cython, Numba, mpi4py, etc.
 
-Other (minor) sources are referenced directly in the notebooks.
+Otras fuentes (menores) se referencian directamente en los notebooks.
 
-## Software prerequisites
+## Requisitos de software
 
-### Python packages
+### Paquetes de Python
 
-The examples discussed in this course are based on Python 3 and NumPy, SciPy,
-Cython, Numba, matplotlib, mpi4py, Dask, and few more.
+Los ejemplos de este curso están basados en Python 3, NumPy, SciPy, Cython, Numba, matplotlib, mpi4py, Dask, y algunos más.
 
-To conveniently get access to all the required packages, users can download and install
-[Miniforge](https://conda-forge.org/miniforge/) -- which is a free alternative to
-commercial Python distributions -- and use `conda` or `mamba` together with the file
-`environment.yml` from this repository to create a local
-[software environment](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file).
+Para instalar todos los paquetes necesarios de forma sencilla, se recomienda descargar e instalar [Miniforge](https://conda-forge.org/miniforge/) — una alternativa gratuita a las distribuciones comerciales de Python — y usar `conda` o `mamba` junto con el archivo de este repositorio correspondiente a tu sistema operativo, para crear un [entorno de software](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html#creating-an-environment-from-an-environment-yml-file) local:
 
-### Jupyter slide presentation via RISE
+* **Linux:** usa `environment.yml`
+* **macOS o Windows:** usa `environment2.yml` (variante multiplataforma; ver el notebook `01--Introduccion.ipynb` para más detalle)
 
-Presentation of the Jupyter notebook cells as slides is possible via the [RISE](http://rise.readthedocs.io/en/latest/index.html) extension.
-To enter presentation mode, simply press <Alt+r> from within a notebook.
+```bash
+conda env create --file environment.yml    # Linux
+# o
+conda env create --file environment2.yml   # macOS / Windows
+conda activate pyhpc
+```
 
+### Presentación de slides en Jupyter vía RISE
+
+Es posible presentar las celdas del notebook de Jupyter como diapositivas usando la extensión [RISE](http://rise.readthedocs.io/en/latest/index.html). Para entrar al modo de presentación, presiona <Alt+r> dentro de un notebook.
